@@ -37,8 +37,8 @@ classDiagram
     class Product1
     class Product2
 
-    ConcreteBuilder1 --> Product1: create
-    ConcreteBuilder2 --> Product2: create
+    Product1 <-- ConcreteBuilder1: create
+    Product2 <-- ConcreteBuilder2: create
     ConcreteBuilder1 ..|> Builder
     ConcreteBuilder2 ..|> Builder
     Director o--> Builder
